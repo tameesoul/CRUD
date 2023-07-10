@@ -62,4 +62,15 @@ class QueryBuilder{
             die($e->getMessage());
         }
     }
+
+    public function delete($table,$student_id){
+        $sql = sprintf("DELETE %s  WHERE student_id =:student_id", $table,$student_id);
+        try {
+            $statment = $this->pdo->prepare($sql);
+            $statment->execute(['student_id'=>$student_id]);
+            return $statment;
+        } catch (PDOException $e) {
+            die($e->getMessage());
+        }
+    }
 }
