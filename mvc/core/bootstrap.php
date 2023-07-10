@@ -12,8 +12,9 @@ $app ['database'] = new QueryBuilder(
 //        //"age"=>20
 //     ]
 //     );
- var_dump($app['database']->select('student','name = ?',["mostafa"])
-);
+//  var_dump($app['database']->select('student','name = ?',["mostafa"])
+// );
+$app['database']->update('student',"name = ? , major = ?" , 'student_id = ?' , ["khaled" ,"it" , 3]);
 function views($file,$data){
     extract($data);
     return require "app/view/$file.view.php";

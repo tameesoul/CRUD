@@ -47,4 +47,19 @@ class QueryBuilder{
         }
     }
 
+    public function update($table, $set, $where, $params)
+    {
+        $sql = sprintf(
+            "update %s set %s where %s",
+            $table,
+            $set,
+            $where
+        );
+        try {
+            $statement = $this->pdo->prepare($sql);
+            $statement->execute($params);
+        } catch (PDOException $e) {
+            die($e->getMessage());
+        }
+    }
 }
