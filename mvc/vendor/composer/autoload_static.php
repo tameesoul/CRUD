@@ -12,6 +12,7 @@ class ComposerStaticInit4649a74afa24e0f36847bae043296f49
         'Composer\\Autoload\\ComposerStaticInit4649a74afa24e0f36847bae043296f49' => __DIR__ . '/..' . '/composer/autoload_static.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'app\\controller\\AppController' => __DIR__ . '/../..' . '/app/controller/AppController.php',
+        'app\\controller\\StudentController' => __DIR__ . '/../..' . '/app/controller/StudentController.php',
         'core\\App' => __DIR__ . '/../..' . '/core/App.php',
         'core\\Database\\Connect' => __DIR__ . '/../..' . '/core/Database/Connect.php',
         'core\\Database\\QueryBuilder' => __DIR__ . '/../..' . '/core/Database/QueryBuilder.php',

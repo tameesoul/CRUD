@@ -11,6 +11,7 @@ return array(
     'Composer\\Autoload\\ComposerStaticInit4649a74afa24e0f36847bae043296f49' => $vendorDir . '/composer/autoload_static.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'app\\controller\\AppController' => $baseDir . '/app/controller/AppController.php',
+    'app\\controller\\StudentController' => $baseDir . '/app/controller/StudentController.php',
     'core\\App' => $baseDir . '/core/App.php',
     'core\\Database\\Connect' => $baseDir . '/core/Database/Connect.php',
     'core\\Database\\QueryBuilder' => $baseDir . '/core/Database/QueryBuilder.php',

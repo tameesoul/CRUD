@@ -31,7 +31,8 @@ class Router {
                 return $this->callaction(...explode('@',$this->routes[$request_method][$uri]));
             }
 
-            echo ("404: page not found");
+            throw new \Exception("Error Processing Request", 1);
+            
             
         }
 
@@ -40,7 +41,10 @@ class Router {
             $controller = "app\\controller\\{$controller}";
             $controller = new $controller;
             if(!method_exists($controller,$action)){
-                echo ("404 : page not found");
+                //echo ("404 : page not found");
+
+             throw new \Exception("Error Processing Request", 1);
+             
             }
             return $controller->$action();
         }
