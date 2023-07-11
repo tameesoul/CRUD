@@ -35,7 +35,7 @@ class QueryBuilder{
             die($e->getMessage());
         }
     }
-    public function select($table, $where, $parame)
+    public function select($table,$where,$parame)
     {
         $sql = sprintf("SELECT * FROM %s WHERE %s", $table, $where);
         try {
